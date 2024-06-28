@@ -1,0 +1,87 @@
+.container-fluid
+{
+	font-family: chilanka;
+}
+.menu1
+{
+	display: flex;
+	padding: 1%;
+	background-image: linear-gradient(  #b6e8ee , #b6eeb6 );
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+.menu1 a
+{
+	background-color: whitesmoke;
+	font-size: 25px;
+	padding: 0.5% 0.5% 0 0.5%;
+	color:  #1c9364 ;
+	border-radius: 15px 15px;
+	box-shadow: 0px 0px 20px 2px turquoise;
+	text-decoration: None;
+}
+.menu1 a:hover
+{
+	text-shadow: 0px 0px 5px #23d790 ;
+	box-shadow: 0px 0px 20px 2px #48c9b0; 
+	text-decoration: None;
+}
+.card
+{
+	border-radius: 10px 10px;
+	box-shadow: 0px 0px 10px 1px #5b9ca0 ;
+	
+	margin: 1%;
+}
+.card h1
+{
+	text-align: center;
+	font-family: chilanka;
+	font-weight: normal;
+	padding-top: 1%;
+	font-size: 30px;
+}
+.content
+{
+	border: 10px ridge silver;
+	background-image: linear-gradient( #70e1f5 , #ffd194 );
+	height: 350px;
+	font-family: purisa;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+#age-up-b
+{
+	border-radius: 50%;
+	height: 90%;
+	width: 85%;
+	font-family: chilanka;
+	background-color: maroon;
+	color: #f7c2c2 ;
+	font-weight: bold;
+	opacity: 0.9;
+	margin-top: 4%;
+}
+#age-up-b:hover
+{
+	opacity: 1;
+	text-shadow: 0px 0px 5px black;
+	box-shadow: 0px 0px 20px 3px #c84949 ; 
+}
+.info
+{
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home Page</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width , initial-scale=1"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" >
+		</script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" >		
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<style type="text/css">
+			#main
+			{
+				width: 99%;
+				height: 1600px;
+				background-image: linear-gradient(black 30%, darkgray, lightgray,#f3f3f3 90%);
+				text-align: center;
+				position: absolute;
+				top: 0px;
+			}
+			#heading
+			{
+				font-family: "ani";
+				color:yellow;
+				font-weight: bold;
+				text-shadow: 30px 30px 30px  #c8bd0a ;	
+				margin-top: -50px;			
+			}
+			 #describe
+			{
+				font-family: "ani";
+				color:  #d2c500 ;
+				font-weight: bold;
+				font-size: 130px;
+				margin: 0px;
+				text-shadow: 5px 20px 15px #d2c500 ;				
+			}
+			#animate
+			{
+				display: flex;
+				flex-wrap:wrap;
+				background-color: #e5e5e5  ;
+				position: fixed;
+				top: 370px;
+			}
+			img
+			{
+				height: 290px;
+				width: 320px;
+			}
+			#p1
+			{
+				color: gold;
+				font-size: 30px;
+				font-family: "Sofia";
+				font-weight: bold;
+			}
+			#p1::first-line
+			{
+				font-size: 45px;
+				color:#cde900;
+			}
+			#p1::first-letter
+			{
+				color:#e0ff00;
+				font-size: 100px;
+				text-shadow: 8px 8px 10px #c1cb56;
+			}
+			button
+			{
+				width: 700px;
+				font-size: 30px;
+				font-family: "purisa";
+				padding: 20px;
+				font-weight: 900;
+				text-shadow: 5px 5px 5px black;
+				box-shadow: 10px 10px 10px black;
+				margin-bottom: 30px;
+			}
+			button:hover
+			{
+				color: white;
+				background-color: black;
+				text-shadow: 5px 5px 5px white;
+				box-shadow: 10px 10px 30px 2px goldenrod inset;
+			}
+			#pin
+			{
+				font-size: 70px;
+				color: goldenrod;
+				font-family: Karumbi;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<big><big><big><big><big><big><big><big><big><h1 id="heading" style="height: 150px;">Re-Live</h1></big></big></big></big></big></big></big></big></big>
+			
+			<h1 id="describe" style="height: 150px;">Life Simulator</h1>
+			<p id="p1">Hey! There??<br>Do you want to re-live your life and change the decisions that you have made in your real life???<br><br>
+				Here is the correct place where you can do so!
+				<br>Live a life of the kind you want! Choose your own looks, place where you can live, profession etc.
+				<p id="pin"><b>YOU CAN <big><big>DO WHATEVER YOU WANT</big></big> HERE IN THIS WORLD!!!!</b></p>
+			</p>
+			<button onclick="document.location='register.html'">Click Here to get started!</button>
+			<div id="animate">
+				<img src="cycling.gif" alt="" >
+				<img src="cool kid.gif" alt="" >
+				<img src="skating.gif" alt="">
+				<img src="playing.gif" alt="">
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

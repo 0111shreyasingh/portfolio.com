@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width , initial-scale=1"/>
+		<title>Signup Page</title>
+		<link rel="stylesheet"  href="form style.css">
+		<style>
+			body
+			{
+				background-image: url(parallel-univ1.webp);
+				background-size: 100%;
+				
+			}
+			.center
+			{
+				background-image: linear-gradient(120deg,rgba( 254, 160, 185 ,0.7), rgba( 254, 234, 160 , 1));
+			}
+		</style>
+		<script type="text/javascript" >
+			function validate() 
+			{
+				var l=document.forms["register"]["lname"].value;
+				var f=document.forms["register"]["fname"].value;
+				var e=document.forms["register"]["mail"].value;
+				var p1=document.forms["register"]["pass1"].value;
+				var p2=document.forms["register"]["pass2"].value;
+				var n=document.forms["register"]["contact"].value;
+				var atr=e.lastIndexOf("@");
+				var dot=e.lastIndexOf(".");  //abc.efg.hij.k
+				
+				if ( isNaN(n)==true ) 
+					{
+						alert("Please enter digits only!");
+						return false;
+					}
+					else if( n.length !== 10 ) 
+					{
+						alert("Please enter valid number of digits only!");
+						return false;
+					}
+				else if ((atr+1)==dot) 
+					{
+						alert("Please check your email id format!");			
+						return false;
+					}
+					else if ( (dot-1)== e.length ) 
+					{
+						alert("Please check your email id format!");
+						return false;
+					}
+					else if ( dot == -1 ) 
+					{
+						alert("Please check your email id format!");
+						return false;
+					}
+					else if ( p1 !== p2 ) 
+					{
+						alert("Passwords do not match! Check again!");
+						return false;
+					}
+					
+				else {
+					return true;
+				}
+			}
+		</script>
+	</head>
+	<body>
+
+	<div>
+			<div class="center">
+				<h1>Sign-up</h1>
+				<form method="post" name="register"  action="life selection.html" onsubmit="return validate()">
+				<div class="txt_field">
+					<input type="text" required name="fname">
+					<span></span>
+					<label>First Name</label>
+				</div>
+				<div class="txt_field">
+					<input type="text" required name="lname">
+					<span></span>
+					<label>Last Name</label>
+				</div>
+				<div class="txt_field">
+					<input type="email" required name="mail">
+					<span></span>
+					<label>Email Id</label>
+				</div>
+		
+				<div class="txt_field">
+					<input type="password" required name="pass1">
+					<span></span>
+					<label>Create Password</label>
+				</div>
+				<div class="txt_field">
+					<input type="password" required name="pass2">
+					<span></span>
+					<label>Confirm Password</label>
+				</div>
+				<div class="txt_field">
+					<input type="tel" required  name="contact">
+					<span></span>
+					<label>Contact number</label>
+				</div>
+			
+				<input type="submit" value="Login">
+				<div class="signup_link">
+					Already a member? <a href="login.html">Log-in</a>
+				</div>
+				</form>
+			</div>
+	</body>
+</html>

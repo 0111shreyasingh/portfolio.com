@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Life Simulator</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width , initial-scale=1"/>
+		<link href="life style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" >
+		</script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" >		
+		</script>
+		<script src="relife fun.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	</head>
+	<body style="background-color: #ffe2b7 ;">
+		<div class="container-fluid" id="screen0">
+			<div class="card">
+				<img src="" alt="" height="100%" id="profile">
+				<h1 id="nameofch"></h1>
+			</div>
+			<div style="width: 98%; margin-left: 1%;" class="card row">
+				<div class="menu1 col-sm-12">
+		   		 <a href="actions.html" >School</a>
+   		 		 <a href="relations.html" class="menu-b" id="relationships-button">Relationships</a>
+ 	   		 	<a href="Career.html">Work</a>
+   		 		<a href="activity.html" class="menu-b" id="activity-button">Activities</a>
+   		 	</div>
+   		 	<div class="row">
+   				<div style="color: #cc0e0e ; text-align: center;" class="col-sm-12">
+   				 If some options are not working, they are either locked, or closed.</div>
+   			</div>	
+  			</div>
+  		
+  		
+  			<div class="content"id="journal-content">
+  				
+  			</div>
+  		
+  		<div class="row info" style="width: 98%; margin-left: 1%;">
+  			<div class="col-sm-2">
+  				<button id="age-up-b">
+  					<span style="font-size: 60px;">Age</span>+
+  				</button>
+  			</div>
+  			
+  			<div id="character" class="col-sm-10">
+ 		   	<div class="row">
+ 		   		<div class="col-sm-12"> 
+							<h2>Character info</h2>
+ 		   		</div>
+ 		   	</div>
+ 		   	<div class="row">
+ 		   		<div class="col-sm-2">
+ 		   			<label for="health">Health</label>
+ 		   		</div>
+ 		   		<div class="col-sm-4">
+ 		   			 <progress id="Healthbar" value="90" max="100"></progress>
+ 		   		</div>
+ 		   	
+ 		   		<div class="col-sm-2">
+ 		   			<label for="happiness">Happiness</label>
+ 		   		</div>
+ 		   		<div class="col-sm-4">
+ 		   			<progress id="happybar" value="70" max="100"></progress>
+ 		   		</div>
+ 		   	</div>
+ 		   	<div class="row">
+ 		   		<div class="col-sm-2">
+ 		   			<label for="Intellect">Intellect</label>
+ 		   		</div>
+ 		   		<div class="col-sm-4">
+ 		   			<progress id="smartsbar" value="80" max="100"></progress>
+ 		   		</div>
+ 		   	
+ 		   		<div class="col-sm-2">
+ 		   			<label for="health">Money</label>
+ 		   		</div>
+ 		   		<div class="col-sm-4">
+ 		   			<progress id="Moneybar" value="10" max="100"></progress> 
+ 		   		</div>
+ 		   	</div>
+
+    			
+  			</div>
+  		</div>
+  </div>
+	</body>
+</html>
